@@ -9,6 +9,10 @@ def subtract(v1, v2):
     return v1 - v2
 def divide(v1, v2):
     return v1/v2
+
+def multiply(v1, v2):
+    return v1 * v2
+
 def main():
     # Use a breakpoint in the code line below to debug your script.
     print(f'Welcome to PyCalculator')
@@ -16,6 +20,7 @@ def main():
     print('1. Add')
     print('2. Subtract')
     print('3. Divide')
+    print('4. Multiply')
 
     while True:
         option = input('Enter option #: ')
@@ -33,6 +38,8 @@ def main():
             print('{} subtract {} is {}'.format(value_one, value_two, subtract(value_one, value_two)))
         elif option == '3':
             print('{} divide {} is {}'.format(value_one, value_two, subtract(value_one, value_two)))
+        elif option == '4':
+            print('{} multiply {} is {}'.format(value_one, value_two, multiply(value_one, value_two)))
 
         if input('Another calculation (y/n)?') == 'n':
             break
